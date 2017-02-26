@@ -22,6 +22,14 @@ public class Fecha {
 		if (anio < 0)
 			return false;
 		// determinamos la cantidad de días del mes:
+		int diasMes = diasMes();
+		if (dia > diasMes)
+			return false;
+		else
+			return true;
+	}
+
+	private int diasMes() {
 		int diasMes = 0;
 		switch (mes) {
 		case 1:
@@ -46,10 +54,7 @@ public class Fecha {
 				diasMes = 28;
 			break;
 		}
-		if (dia > diasMes)
-			return false;
-		else
-			return true;
+		return diasMes;
 	}
 
 	public static void main(String[] args) throws IOException {
