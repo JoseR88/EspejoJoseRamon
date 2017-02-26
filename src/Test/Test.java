@@ -3,7 +3,13 @@ package Test;
 import static org.junit.Assert.*;
 
 import Fecha.Fecha;
-
+/**
+ * Conjunto de pruebas
+ *  
+ * @author Jose Ramon
+ * @version 1.0
+ *
+ */
 public class Test {
 	Fecha f;
 	@org.junit.Test
